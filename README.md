@@ -1,14 +1,11 @@
 # Genomic Adversarial Robustness 
 
-> A reinforcement-learning pipeline for adversarial robustness evaluation of DNA sequence classifiers using biologically constrained synonymous codon substitutions.
-
----
 
 ## Overview
 
 This project investigates whether genomic foundation models can be fooled by **synonymous nucleotide mutations** — edits that change the DNA sequence but leave the encoded protein intact. A PPO agent navigates the synonymous-substitution space to find minimal edit paths that defeat a classifier.
 
-**Key question:** How many silent codon swaps does it take to make a promoter look like a non-promoter to a deep learning model?
+**Key question:** How many codon swaps does it take to make a promoter look like a non-promoter to a deep learning model?
 
 
 ## Models
