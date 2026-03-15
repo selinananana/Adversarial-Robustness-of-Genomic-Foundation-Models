@@ -1,4 +1,4 @@
-# 🧬 Genomic Adversarial Robustness Framework
+# Genomic Adversarial Robustness 
 
 > A reinforcement-learning pipeline for adversarial robustness evaluation of DNA sequence classifiers using biologically constrained synonymous codon substitutions.
 
@@ -10,21 +10,6 @@ This project investigates whether genomic foundation models can be fooled by **s
 
 **Key question:** How many silent codon swaps does it take to make a promoter look like a non-promoter to a deep learning model?
 
----
-
-## Environment
-
-| Component | Spec |
-|-----------|------|
-| GPU | NVIDIA A100 80 GB PCIe |
-| CUDA | 12.9 |
-| Driver | 575.57.08 |
-| Python | 3.12 |
-| Framework | PyTorch + HuggingFace Transformers |
-| RL Library | Stable-Baselines3 (PPO) |
-| Gym API | Gymnasium |
-
----
 
 ## Models
 
