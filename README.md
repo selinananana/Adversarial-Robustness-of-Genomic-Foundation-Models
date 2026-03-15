@@ -97,41 +97,9 @@ A fresh PPO agent is trained for 2,000 timesteps per target sequence. Result (su
 
 ---
 
-## Extending to New Models
-
-Any model with a `get_score(sequence: str) -> float` method can be plugged in:
-
-```python
-class MyClassifier:
-    def get_score(self, sequence: str) -> float:
-        ...  # return probability in [0, 1]
-
-env = DNAAdversarialEnv(sequence, MyClassifier())
-```
-
----
-
-## Citation
-
-```bibtex
-@techreport{genomic_adversarial_2025,
-  title  = {Adversarial Robustness of Genomic Foundation Models:
-             A Synonymous-Substitution Attack Framework Using Reinforcement Learning},
-  year   = {2025}
-}
-```
-
----
-
 ## References
 
 - Ji et al. (2021). DNABERT. *Bioinformatics*, 37(15), 2112-2120.
 - Avsec et al. (2021). Enformer. *Nature Methods.*
 - Grevsova et al. (2023). Genomic Benchmarks. *BMC Genomic Data.*
 - Schulman et al. (2017). PPO. *arXiv:1707.06347.*
-
----
-
-## License
-
-MIT
