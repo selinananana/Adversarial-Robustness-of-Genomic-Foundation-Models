@@ -55,9 +55,6 @@ huggingface-cli download EleutherAI/enformer-official-rough
 ```bash
 # First run (downloads weights if not cached)
 python main.py
-
-# Subsequent runs (offline)
-TRANSFORMERS_OFFLINE=1 python main.py
 ```
 
 ---
